@@ -1,3 +1,5 @@
+
+#Last n lines from  the file
 filename = input("Enter file name: ")
 n = int(input("Enter number of last lines to read: "))
 
@@ -11,7 +13,7 @@ for line in last_lines:
     print(line, end='')
 
 
-
+# List of lines from file
 filename = input("\nEnter file name: ")
 
 with open(filename, 'r') as file:
@@ -20,7 +22,7 @@ with open(filename, 'r') as file:
 print("\nList of lines from file:")
 print(lines_list)
 
-
+#Number of lines in the file
 filename = input("\nEnter file name: ")
 
 with open(filename, 'r') as file:
@@ -28,6 +30,7 @@ with open(filename, 'r') as file:
 
 print("\nNumber of lines in the file:", line_count)
 
+#Longest word
 
 filename = input("\nEnter file name: ")
 
@@ -37,4 +40,4 @@ with open(filename, 'r') as file:
     longest_words = [word for word in words if len(word) == max_length]
 
 print("\nLongest word(s) in the file:")
-print(longest_words)
+print(longest_word)
