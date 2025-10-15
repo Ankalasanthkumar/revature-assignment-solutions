@@ -40,4 +40,4 @@ with open(filename, 'r') as file:
     longest_words = [word for word in words if len(word) == max_length]
 
 print("\nLongest word(s) in the file:")
-print(longest_word)
+print(longest_words)
