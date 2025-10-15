@@ -6,12 +6,13 @@ with open(filename, 'r') as file:
     last_lines = lines[-n:]
 
 
-
-print("\nLast", n, "lines from the file:")
+print("\nLast", n, "lines from  the file:\n")
 for line in last_lines:
     print(line, end='')
 
-filename = input("Enter file name: ")
+
+
+filename = input("\nEnter file name: ")
 
 with open(filename, 'r') as file:
     lines_list = [line.strip() for line in file]
@@ -20,7 +21,7 @@ print("\nList of lines from file:")
 print(lines_list)
 
 
-filename = input("Enter file name: ")
+filename = input("\nEnter file name: ")
 
 with open(filename, 'r') as file:
     line_count = sum(1 for _ in file)
@@ -28,7 +29,7 @@ with open(filename, 'r') as file:
 print("\nNumber of lines in the file:", line_count)
 
 
-filename = input("Enter file name: ")
+filename = input("\nEnter file name: ")
 
 with open(filename, 'r') as file:
     words = file.read().split()
